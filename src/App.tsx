@@ -1,3 +1,4 @@
+export const API_URL = "https://finforge-api-58ec.onrender.com";
 import { useEffect } from 'react';
 import { useStore } from './store/useStore';
 import { generateMockTransactions } from './utils/mockDataGenerator';

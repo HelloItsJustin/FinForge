@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Copy, Download, FileText, Loader2 } from 'lucide-react';
 import { useStore } from '../store/useStore';
+import { API_URL } from '../App';
 
 export default function JsonOutput() {
   const { analysisResult, analysisId, setToastMessage } = useStore();

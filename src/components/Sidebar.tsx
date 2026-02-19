@@ -6,7 +6,7 @@ import { runDetection } from '../utils/detector';
 import { generateMockTransactions } from '../utils/mockDataGenerator';
 import MethodologyPanel from './MethodologyPanel';
 
-const BACKEND_URL = import.meta.env.VITE_BACKEND_URL ?? '';
+import { API_URL } from '../App';
 
 async function tryBackendAnalysis(transactions: { [k: string]: unknown }[]): Promise<unknown> {
   const csv = [
@@ -19,7 +19,7 @@ async function tryBackendAnalysis(transactions: { [k: string]: unknown }[]): Pro
   const form = new FormData();
   form.append('file', new Blob([csv], { type: 'text/csv' }), 'data.csv');
 
-  const resp = await fetch(`${BACKEND_URL}/api/upload`, { method: 'POST', body: form });
+  const resp = await fetch(`${API_URL}/api/upload`, { method: 'POST', body: form });
   if (!resp.ok) throw new Error(`Backend error: ${resp.status}`);
   return resp.json();
 }
@@ -104,7 +104,7 @@ export default function Sidebar() {
       console.error('Backend analysis failed:', err);
       result = runDetection(transactions);
       // Only show toast if the backend URL was explicitly set or if it's a real failure
-      if (BACKEND_URL) {
+      if (API_URL) {
         setToastMessage('Backend offline — using client-side detection engine.');
       }
     }
