@@ -7,7 +7,7 @@ RIFT 2026 Hackathon | Graph Theory and Financial Crime Detection Track
 ## Live Demo
 
 The production environment for FinForge is accessible at:
-[https://finforge-demo.vercel.app](https://finforge-demo.vercel.app)
+[chipper-elf-8ceae4.netlify.app](chipper-elf-8ceae4.netlify.app)
 
 ---
 
