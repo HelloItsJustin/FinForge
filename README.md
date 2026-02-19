@@ -41,24 +41,24 @@ Illicit financial networks utilize "money muling" to obscure fund origins throug
 ## System Architecture
 
 ```text
-┌─────────────────────────────────────────────────────────────────┐
-│                        CLIENT BROWSER                           │
-│   ┌──────────────┐   ┌─────────────────┐   ┌───────────────┐  │
-│   │  CSV Upload  │   │  Cytoscape.js   │   │  Forensic     │  │
-│   │    Module    │   │  Graph Viewer   │   │  Summary      │  │
-│   └──────┬───────┘   └────────▲────────┘   └───────▲───────┘  │
-│          │                    │                     │           │
+┌────────────────────────────────────────────────────────────────┐
+│                        CLIENT BROWSER                          │
+│   ┌──────────────┐   ┌─────────────────┐   ┌───────────────┐   │
+│   │  CSV Upload  │   │  Cytoscape.js   │   │  Forensic     │   │
+│   │    Module    │   │  Graph Viewer   │   │  Summary      │   │
+│   └──────┬───────┘   └────────▲────────┘   └───────▲───────┘   │
+│          │                    │                     │          │
 └──────────┼────────────────────┼─────────────────────┼──────────┘
            │ POST /analyze      │ JSON Response        │
            ▼                    │                     │
 ┌─────────────────────────────────────────────────────────────────┐
 │                        FASTAPI BACKEND                          │
 │                                                                 │
-│   parse_csv() ──► build_graph() ──► Detection Pipeline         │
+│   parse_csv() ──► build_graph() ──► Detection Pipeline          │
 │                                          │                      │
 │              ┌───────────────────────────┤                      │
 │              ▼           ▼              ▼            ▼          │
-│   detect_smurfing() detect_cycles() detect_shell() detect_mm() │
+│   detect_smurfing() detect_cycles() detect_shell() detect_mm()  │
 │              │           │              │            │          │
 │              └───────────┴──────────────┴────────────┘          │
 │                               │                                 │
