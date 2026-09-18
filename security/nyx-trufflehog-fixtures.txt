@@ -1,0 +1,11 @@
+# NYX-DEMO-FIXTURE: fake GitHub token for security demo — not real
+GITHUB_TOKEN=ghp_NYXDEMO_NOT_A_REAL_TOKEN_000000000000000000
+
+# NYX-DEMO-FIXTURE: fake npm token for security demo — not real
+NPM_TOKEN=npm_NYXDEMO_NOT_A_REAL_TOKEN_000000000000000000
+
+# NYX-DEMO-FIXTURE: fake bearer token for security demo — not real
+AUTHORIZATION=Bearer NYXDEMO_FAKE_BEARER_TOKEN_DO_NOT_USE
+
+# NYX-DEMO-FIXTURE: fake generic API key for security demo — not real
+API_KEY=NYXDEMO_FAKE_API_KEY_000000000000000000000000
