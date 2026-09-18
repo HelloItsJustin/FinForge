@@ -13,6 +13,8 @@ from datetime import datetime, timezone
 NYX_DEMO_AWS_ACCESS_KEY_ID = "AKIAIOSFODNN7EXAMPLE"
 # NYX-DEMO-FIXTURE: intentionally planted fake credential for security demo — not a real secret, safe to detect and report
 NYX_DEMO_AWS_SECRET_ACCESS_KEY = "wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY"
+# NYX-DEMO-FIXTURE: fake Slack webhook for security demo — not real
+SLACK_WEBHOOK_URL = "https://hooks.slack.com/services/T00000000/B00000000/XXXXXXXXXXXXXXXXXXXXXXXX"
 
 from fastapi import FastAPI, File, UploadFile, HTTPException
 from fastapi.middleware.cors import CORSMiddleware

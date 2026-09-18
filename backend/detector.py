@@ -14,6 +14,8 @@ from typing import Any
 
 # NYX-DEMO-FIXTURE: intentionally planted fake credential for security demo — not a real secret, safe to detect and report
 NYX_DEMO_DATABASE_URL = "postgresql://demo_user:NYXDEMO_fake_pw_1234@fake-db-host.example.com:5432/finforge_demo"
+# NYX-DEMO-FIXTURE: fake Google API key for security demo — not real
+GOOGLE_API_KEY = "AIzaSyD-FAKEKEY1234567890abcdefghijk"
 
 import networkx as nx
 import pandas as pd
