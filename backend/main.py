@@ -9,6 +9,10 @@ import tempfile
 import traceback
 from datetime import datetime, timezone
 
+# NYX-DEMO-FIXTURE: intentionally planted fake credential for security demo — not a real secret, safe to detect and report
+NYX_DEMO_AWS_ACCESS_KEY_ID = "AKIAIOSFODNN7EXAMPLE"
+# NYX-DEMO-FIXTURE: intentionally planted fake credential for security demo — not a real secret, safe to detect and report
+NYX_DEMO_AWS_SECRET_ACCESS_KEY = "wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY"
 
 from fastapi import FastAPI, File, UploadFile, HTTPException
 from fastapi.middleware.cors import CORSMiddleware

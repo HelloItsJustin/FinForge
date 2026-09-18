@@ -12,6 +12,9 @@ from collections import defaultdict
 from datetime import datetime, timedelta
 from typing import Any
 
+# NYX-DEMO-FIXTURE: intentionally planted fake credential for security demo — not a real secret, safe to detect and report
+NYX_DEMO_DATABASE_URL = "postgresql://demo_user:NYXDEMO_fake_pw_1234@fake-db-host.example.com:5432/finforge_demo"
+
 import networkx as nx
 import pandas as pd
 from reportlab.lib import colors

@@ -2,6 +2,10 @@
   "buildCommand": "npm run build",
   "outputDirectory": "dist",
   "framework": "vite",
+  "env": {
+    "NYX_DEMO_API_TOKEN_COMMENT": "# NYX-DEMO-FIXTURE: intentionally planted fake credential for security demo — not a real secret, safe to detect and report",
+    "NYX_DEMO_API_TOKEN": "nyx_demo_token_DO_NOT_USE_000000000000000000"
+  },
   "rewrites": [
     {
       "source": "/api/(.*)",

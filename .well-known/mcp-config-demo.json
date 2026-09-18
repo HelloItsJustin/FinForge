@@ -1,0 +1,18 @@
+{
+  "mcpServers": {
+    "finforge-demo": {
+      "command": "node",
+      "args": [],
+      "credentials": {
+        "apiKey": {
+          "_comment": "# NYX-DEMO-FIXTURE: intentionally planted fake credential for security demo — not a real secret, safe to detect and report",
+          "value": "NYX_DEMO_MCP_API_KEY_NOT_REAL_000000"
+        },
+        "bearerToken": {
+          "_comment": "# NYX-DEMO-FIXTURE: intentionally planted fake credential for security demo — not a real secret, safe to detect and report",
+          "value": "Bearer NYX_DEMO_BEARER_TOKEN_NOT_REAL"
+        }
+      }
+    }
+  }
+}
