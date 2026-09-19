@@ -1,2 +1,2 @@
 # NYX-DEMO-FIXTURE: fake MongoDB connection string for security demo — not real
-mongodb+srv://demo_admin:NYXDEMO_fake_pw_5678@fake-cluster.mongodb.net/finforge_prod
+# Demo MongoDB configuration is supplied locally -- never committed
