@@ -29,7 +29,7 @@ app = FastAPI(title="FinForge API", version="2.0.0")
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=os.getenv("ALLOWED_ORIGINS", "https://chipper-elf-8ceae4.netlify.app").split(","),
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
